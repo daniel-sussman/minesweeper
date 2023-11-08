@@ -1,7 +1,7 @@
 /* CSS classes you can use on your table td to display the relevant tile */
 body {
-  /* background-color: cadetblue; */
-  background-image: url("img/wallpaper.jpg");
+  background-color: #358285;
+  /* background-image: url("img/wallpaper.jpg"); */
 }
 td.unopened {
   background: url('img/unopened.svg') !important;
@@ -82,7 +82,7 @@ td[data-index="8"] {
 #smiley {
   width: 40px;
   height: 40px;
-  line-height: 48px;
+  line-height: 44px;
   background-image: url('img/unopened.svg');
   background-size: cover;
   font-size: 28px;
