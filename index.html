@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Minesweeper</title>
+  <link rel="shortcut icon" href="data:image/x-icon;" type="image/x-icon">
+  <link rel="stylesheet" href="minesweeper.css">
+</head>
+<body>
+  <div class="container">
+    <div id="outer-box">
+      <div id="console">
+        <div id="time-left">000</div>
+        <div id="smiley">🙂</div>
+        <div id="mines-left">00</div>
+      </div>
+      <table>
+        <tbody id="minesweeper">
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script type="module" src="./lib/minesweeper.js"></script>
+</body>
+</html>

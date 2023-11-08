@@ -1,0 +1,114 @@
+/* CSS classes you can use on your table td to display the relevant tile */
+body {
+  /* background-color: cadetblue; */
+  background-image: url("img/wallpaper.jpg");
+}
+td.unopened {
+  background: url('img/unopened.svg') !important;
+  cursor: pointer !important;
+}
+td.opened {
+  background: url('img/opened.svg');
+}
+td.flagged {
+  background: url('img/flag.svg') !important;
+}
+td.question {
+  background: url('img/question.svg') !important;
+}
+td.mine {
+  background: url('img/mine.png');
+}
+td.exploded {
+  background-color: red;
+}
+td[data-index="1"] {
+  background: url('img/1.svg');
+}
+td[data-index="2"] {
+  background: url('img/2.svg');
+}
+td[data-index="3"] {
+  background: url('img/3.svg');
+}
+td[data-index="4"] {
+  background: url('img/4.svg');
+}
+td[data-index="5"] {
+  background: url('img/5.svg');
+}
+td[data-index="6"] {
+  background: url('img/6.svg');
+}
+td[data-index="7"] {
+  background: url('img/7.svg');
+}
+td[data-index="8"] {
+  background: url('img/8.svg');
+}
+
+.container {
+  width: 100%;
+  padding: 48px 0;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+#outer-box {
+  padding: 0 16px 16px;
+  background-color: #b9b9b9;
+  border: 2px solid #999;
+}
+#console {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 8px 0;
+}
+#mines-left, #time-left {
+  color: rgb(185, 42, 42);
+  font-family: 'digital_counter_7regular';
+  font-size: 24px;
+  border: 1px solid #999;
+  background-color: #333;
+  text-align: center;
+  padding: 5px;
+  width: 32px;
+}
+#time-left {
+  width: 40px;
+}
+#smiley {
+  width: 40px;
+  height: 40px;
+  line-height: 48px;
+  background-image: url('img/unopened.svg');
+  background-size: cover;
+  font-size: 28px;
+  border: 1px solid #999;
+  border-collapse: collapse;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Positioning the Minesweep table and make sure the cells are square */
+table #minesweeper {
+  margin: auto;
+  margin-top: 3em;
+  border: 1px solid #999;
+  border-collapse: collapse;
+}
+table #minesweeper td {
+  width: 24px;
+  height: 24px;
+  background-size: cover !important;
+}
+
+@font-face {
+  font-family: 'digital_counter_7regular';
+  src: url('fonts/digital-counter-7.regular-webfont.woff2') format('woff2'),
+       url('fonts/digital-counter-7.regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
